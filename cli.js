@@ -8,15 +8,7 @@ const meow = require('meow');
 const ui = importJsx('./ui');
 
 const cli = meow(`
-	Usage
-	  $ react-ink
-
-	Options
-		--name  Your name
-
-	Examples
-	  $ react-ink --name=Jane
-	  Hello, Jane
+	Usage ...
 `);
 
 render(React.createElement(ui, cli.flags));
